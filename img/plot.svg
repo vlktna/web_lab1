@@ -1,0 +1,46 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" fill="#fff" id="canvas_background" height="602" width="602" y="-1" x="-1"/>
+  <g style="vector-effect: non-scaling-stroke;" stroke="null" display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g stroke="null">
+
+<!--  График-->
+  <title stroke="null">Layer 1</title>
+  <path stroke="null" id="svg_33" d="m378.4548,288.34351c0,51.41669 -41.64753,93.06422 -93.06422,93.06422l93.06422,-93.06422z" stroke-opacity="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.5" fill-opacity="null" fill="#95a3b3"/>
+  <path stroke="null" transform="rotate(90 332.3509521484375,334.83764648437506) " id="svg_38" d="m285.43803,381.83234l0,-93.98936l93.82587,93.98936l-93.82587,0z" stroke-width="1.5" fill="#95a3b3"/>
+  <path stroke="null" id="svg_30" d="m285.00553,288.27897l0,-93.5498l93.60609,93.5498l-93.60609,0z" stroke-width="1.5" fill="#95a3b3"/>
+  <rect id="svg_29" height="93.49107" width="188.16558" y="195.00318" x="97.40247" stroke-width="1.5" fill="#95a3b3"/>
+
+<!--  Система координат-->
+  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="522.05532" x2="285.21739" y1="56.47484" x1="285.21739" stroke-width="1.5" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="288.72546" x2="519.60805" y1="288.72546" x1="50.49019" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+
+  <path id="svg_4" d="m278.87915,69.05821l6.48705,-18.47002l6.48705,18.47002l-12.9741,0z" stroke-width="1.5" fill="#000"/>
+  <path transform="rotate(90 514.5632934570314,289.02026367187506) " id="svg_7" d="m508.07621,298.25527l6.48705,-18.47002l6.48705,18.47002l-12.9741,0z" stroke-width="1.5" fill="#000"/>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_8" y="69.70802" x="295.98538" stroke-width="0" fill="#000000">Y</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_9" y="108.75911" x="296.35034" stroke-width="0" fill="#000000">R</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_10" y="202.18976" x="296.35034" stroke-width="0" fill="#000000">R/2</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_11" y="272.62771" x="366.42333" stroke-width="0" fill="#000000">R/2</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_12" y="272.26275" x="186.86131" stroke-width="0" fill="#000000">-R/2</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_13" y="389.41602" x="303.64962" stroke-width="0" fill="#000000">-R/2</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_14" y="272.62772" x="460.58391" stroke-width="0" fill="#000000">R</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_15" y="276.64232" x="507.29924" stroke-width="0" fill="#000000">X</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_16" y="483.21165" x="304.01457" stroke-width="0" fill="#000000">-R</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_17" y="272.26276" x="93.06568" stroke-width="0" fill="#000000">-R</text>
+
+  <line stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_20" y2="292" x2="97" y1="285" x1="97" stroke-width="1.5" fill="none"/>
+  <line stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_22" y2="292" x2="191" y1="285" x1="191" stroke-width="1.5" fill="none"/>
+  <line stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_23" y2="292" x2="379" y1="285" x1="379" stroke-width="1.5" fill="none"/>
+  <line stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_24" y2="292" x2="472" y1="285.0654" x1="472" stroke-width="1.5" fill="none"/>
+  <line transform="rotate(90 285.2455139160157,195.1549987792969) " stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_25" y2="198.42639" x2="285.24553" y1="191.88361" x1="285.24553" stroke-width="1.5" fill="none"/>
+  <line transform="rotate(90 285.2455139160157,101.35337829589847) " stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_26" y2="104.62477" x2="285.24553" y1="98.08199" x1="285.24553" stroke-width="1.5" fill="none"/>
+  <line transform="rotate(90 285.2455139160156,382.13839721679693) " stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_27" y2="385.40979" x2="285.24553" y1="378.86701" x1="285.24553" stroke-width="1.5" fill="none"/>
+  <line transform="rotate(90 285.2455139160157,476.3532409667969) " stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_28" y2="479.62464" x2="285.24553" y1="473.08186" x1="285.24553" stroke-width="1.5" fill="none"/>
+
+  <path id="svg_36" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="null" fill="#95a3b3"/>
+ </g>
+</svg>

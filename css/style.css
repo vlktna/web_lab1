@@ -1,0 +1,139 @@
+body{
+    font-family: "Trebuchet MS", serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+    color: #ffffff;
+    background-color: #4b4e6d;
+    padding: 20px;
+    font-size: 140%;
+
+}
+
+.container{
+    display: flex;
+}
+
+.stud_name{
+    float: right;
+}
+
+.getValue{
+    font-size: 150%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 12px 20px;
+}
+
+input{
+    font-size: 100%;
+    font-family: "Trebuchet MS", serif;
+    user-select: none;
+
+}
+
+input[type=number]{
+    border: none;
+    border-bottom: 2px solid #84dcc6;
+    background-color: #f2f2f2;
+    margin-left: 10px;
+
+}
+
+input[type=submit]{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    background-color: #84dcc6;
+    border-radius: 10px;
+    border: 1px solid #95a3b3;
+}
+
+button{
+    font-size: 100%;
+    font-family: "Trebuchet MS", serif;
+    line-height: 34px;
+    background-color: #84dcc6;
+    border-radius: 10px;
+    border: 1px solid #95a3b3;
+}
+
+.form_radio_btn {
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border: 1px solid #95a3b3;
+    border-radius: 10px;
+    user-select: none;
+
+}
+
+.form_radio_btn input[type=radio]:checked + label {
+    background: #84dcc6;
+}
+
+.form_radio_btn label:hover {
+    color: #95a3b3;
+}
+
+.form_block{
+    display: flex;
+    padding: 10px 10px;
+}
+
+select{
+    margin-left: 10px;
+    padding: 0px 10px;
+    line-height: 34px;
+    border: 1px solid #95a3b3;
+    border-radius: 10px;
+    font-size: 100%;
+    font-family: "Trebuchet MS", serif;
+    cursor: pointer;
+    user-select: none;
+}
+
+select:hover {
+    color: #95a3b3;
+}
+
+table{
+    margin: auto;
+    font-size: 140%;
+}
+
+th{
+    background-color: #4b4e6d;
+    color: #ffffff;
+    padding: 5px 100px;
+}
+
+td{
+    font-size: 80%;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 5px;
+
+}
+
+
+
+
+
+
