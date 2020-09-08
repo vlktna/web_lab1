@@ -33,7 +33,6 @@ input{
     font-size: 100%;
     font-family: "Trebuchet MS", serif;
     user-select: none;
-
 }
 
 input[type=number]{
@@ -41,17 +40,6 @@ input[type=number]{
     border-bottom: 2px solid #84dcc6;
     background-color: #f2f2f2;
     margin-left: 10px;
-
-}
-
-input[type=submit]{
-    display: inline-block;
-    cursor: pointer;
-    padding: 0px 15px;
-    line-height: 34px;
-    background-color: #84dcc6;
-    border-radius: 10px;
-    border: 1px solid #95a3b3;
 }
 
 button{
@@ -61,6 +49,7 @@ button{
     background-color: #84dcc6;
     border-radius: 10px;
     border: 1px solid #95a3b3;
+
 }
 
 .form_radio_btn {
@@ -90,6 +79,7 @@ button{
 
 .form_radio_btn label:hover {
     color: #95a3b3;
+
 }
 
 .form_block{
@@ -121,7 +111,7 @@ table{
 th{
     background-color: #4b4e6d;
     color: #ffffff;
-    padding: 5px 100px;
+    padding: 5px 70px;
 }
 
 td{
@@ -130,6 +120,11 @@ td{
     background-color: #f2f2f2;
     padding: 5px;
 
+}
+
+iframe{
+    border: none;
+    width: 1200px;
 }
 
 

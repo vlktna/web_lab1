@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+<?php
+session_start();
+$_SESSION['result'] = array();
+?>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>lab1</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
-
 <body>
-
 <div class="header">
     <span>Вариант 2607</span>
     <span class="stud_name">Волокитина Вероника, P3230</span>
@@ -18,13 +19,13 @@
 <div class="container">
 
     <div class="image">
-        <object type="image/svg+xml" data="img/plot.svg">
-            <img src="img/plot.svg" alt="plot">
+        <object type="image/svg+xml" data="../img/plot.svg">
+            <img src="../img/plot.svg" alt="plot">
         </object>
     </div>
 
 
-    <form class="getValue" id="form" action="" method="post">
+    <form class="getValue" id="form" action="check.php" target="result_table">
 
         <div class="form_block">
             <label for="valX">X = </label>
@@ -78,54 +79,25 @@
             </div>
         </div>
 
-        <div id="errorField" class="form_block"></div>
-
-        <script>
-            function xz() {
-                let valueX = document.getElementById("valX");
-                let valueY = document.getElementById("valY");
-                let valueR = document.getElementById("valR");
-
-                let data;
-
-                if ((valueX > 0 && valueY > 0 && valueY < valueR / 2 - valueX) || (valueX < 0 && valueY > 0 && valueR / 2 > valueY
-                    && -valueR < valueX) || (valueX > 0 && valueY < 0 && valueX ^ 2 + valueY < (valueR ^ 2) / 4)) {
-
-                    data = "1";
-                } else {
-                    data = "0";
-                }
-
-                document.getElementById('text').innerHTML = data;
-
-            }
-        </script>
-
-
         <div class="form_block">
-            <button name="check" onclick="xz()">CHECK</button>
+            <button name="check" type="submit">CHECK</button>
+            <button name="clear" type="submit" onclick="clear.php">CLEAR</button>
+
         </div>
 
     </form>
 
 </div>
 
-<div id="text">123</div>
-<a href="#" onclick="check()">Далее</a>
 
-<table>
-    <tr>
-        <th>X</th>
-        <th>Y</th>
-        <th>R</th>
-        <th>RESULT</th>
-        <th>TIME</th>
-
-        <!--    FOR EACH из массива-->
-    </tr>
+<center>
+    <div>
+        <iframe name="result_table" id="result_table">
+        </iframe>
+    </div>
+</center>
 
 
-</table>
 
 </body>
 
