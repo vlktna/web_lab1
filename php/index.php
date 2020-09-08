@@ -9,9 +9,10 @@ $_SESSION['result'] = array();
     <meta charset="UTF-8">
     <title>lab1</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="/js/script.js"></script>
 </head>
 
-<body onload="drawPlat()">
+<body>
 <div class="header">
     <span>Вариант 2607</span>
     <span class="stud_name">Волокитина Вероника, P3230</span>
@@ -30,7 +31,7 @@ $_SESSION['result'] = array();
         <polygon class="rectangle-graph" fill=#95a3b3
                  points="300,300 401,300 300,401"></polygon>
 
-        <path class="circle-graph" d="M 400,300 A 100,100 0 0, 1 300,400"  fill=#95a3b3></path>
+        <path class="circle-graph" d="M 400,300 A 100,100 0 0, 1 300,400" fill=#95a3b3></path>
 
         <line class="axis" stroke="black" x1="50" x2="550" y1="300" y2="300"></line>
         <line class="axis" stroke="black" x1="300" x2="300" y1="50" y2="550"></line>
@@ -61,10 +62,10 @@ $_SESSION['result'] = array();
         <text class="point-text" x="395" y="290" font-size="20px">R/2</text>
         <text class="point-text" x="495" y="290" font-size="20px">R</text>
 
-        <text class="point-text" x="550" y="290" font-size="20px">Y</text>
-        <text class="point-text" x="310" y="60" font-size="20px">X</text>
+        <text class="point-text" x="550" y="290" font-size="20px">X</text>
+        <text class="point-text" x="310" y="60" font-size="20px">Y</text>
 
-        <circle cx="150" cy="150" fill="red" id="target-dot" r="0"></circle>
+        <circle cx="150" cy="150" fill=#84dcc6 id="target-dot" r="0"></circle>
     </svg>
 
     <form class="getValue" id="form" action="check.php" target="result_table">
@@ -91,7 +92,7 @@ $_SESSION['result'] = array();
 
         <div class="form_block">
             <label for="form_radio_group">R = </label>
-            <div id="form_radio_group">
+            <div id="valR">
 
                 <div class="form_radio_btn">
                     <input id="radio-1" type="radio" name="valueR" value="1" checked>
@@ -122,7 +123,7 @@ $_SESSION['result'] = array();
         </div>
 
         <div class="form_block">
-            <button name="check" type="submit">CHECK</button>
+            <button name="check" type="submit" onclick="targetDot()">CHECK</button>
         </div>
 
     </form>
@@ -133,6 +134,16 @@ $_SESSION['result'] = array();
     <iframe name="result_table" id="result_table">
     </iframe>
 </div>
+
+<footer>
+    <a href="https://github.com/vlktna/web_lab1">
+        <svg aria-hidden="true" class="github-icon" height="32" viewBox="0 0 16 16" width="32">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                  fill-rule="evenodd" fill=#84dcc6>
+            </path>
+        </svg>
+    </a>
+</footer>
 
 
 </body>

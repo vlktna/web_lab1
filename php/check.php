@@ -27,15 +27,21 @@ echo "<!DOCTYPE HTML>
     </tr>";
 
 
-if (($X >= 0 && $Y >= 0 && $Y <= $R / 2 - $X) || ($X <= 0 && $Y >= 0 && $R / 2 >= $Y && -$R < $X) ||
-    ($X >= 0 && $Y <= 0 && $X ^ 2 + $Y < ($R ^ 2) / 4)) {
+if ($X >= 0 && $Y >= 0 && $Y <= $R / 2 - $X) {
     $scriptTime = microtime(true) - $startTime;
     $result = "TRUE";
 
+} elseif ($X <= 0 && $Y >= 0 && ($R / 2 >= $Y) && (-$R <= $X)) {
+    $scriptTime = microtime(true) - $startTime;
+    $result = "TRUE";
+} elseif ($X >= 0 && $Y <= 0 && $X ^ 2 + $Y < ($R ^ 2) / 4) {
+    $scriptTime = microtime(true) - $startTime;
+    $result = "TRUE";
 } else {
     $scriptTime = microtime(true) - $startTime;
     $result = "FALSE";
 }
+
 
 array_push($_SESSION['result'], "<tr> <td>$X</td> <td>$Y</td> <td>$R</td> <td>$result</td> 
 <td>$currentTime</td> <td>$scriptTime</td>");
@@ -44,5 +50,7 @@ foreach ($_SESSION['result'] as $line) {
     echo $line;
 }
 echo "</table> </body> </html>";
+
+
 
 
