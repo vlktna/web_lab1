@@ -11,11 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40aa799d-6776-4667-9ee0-acecd165f2bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/action.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +44,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/css" />
-      <recent name="$PROJECT_DIR$/php" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/php" />
+      <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
@@ -85,7 +84,7 @@
       <updated>1598817214282</updated>
       <workItem from="1598817215518" duration="387000" />
       <workItem from="1598817704345" duration="23958000" />
-      <workItem from="1599409698025" duration="11047000" />
+      <workItem from="1599409698025" duration="21574000" />
     </task>
     <servers />
   </component>
@@ -153,9 +152,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="295" key="GridCell.Tab.2.right/0.0.1280.800@0.0.1280.800" timestamp="1599156765870" />
-    <state x="461" y="330" key="NewPhpFileDialog" timestamp="1599422144151">
+    <state x="461" y="330" key="NewPhpFileDialog" timestamp="1599570328209">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="461" y="330" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1599422144151" />
+    <state x="461" y="330" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1599570328209" />
   </component>
 </project>

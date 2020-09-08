@@ -12,9 +12,16 @@ body{
     font-size: 140%;
 
 }
+.plot{
+    background-color: red;
+}
 
 .container{
     display: flex;
+}
+
+.container-table{
+    text-align: center;
 }
 
 .stud_name{
