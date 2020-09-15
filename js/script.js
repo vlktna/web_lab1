@@ -16,10 +16,10 @@ function inputValidation(input, minValue, maxValue) {
         return false;
     } else {
         if (Number(input.value) > maxValue) {
-            alert("Число " + input.name + " должно быть меньше или равно 5");
+            alert("Число " + input.name + " должно быть меньше или равно" + maxValue);
             return false;
         } else if (Number(input.value) < minValue) {
-            alert("Число " + input + " должно быть больше или равно -5");
+            alert("Число " + input.name + " должно быть больше или равно" + minValue);
             return false;
         } else {
             targetDot();
