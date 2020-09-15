@@ -9,7 +9,8 @@ $_SESSION['result'] = array();
     <meta charset="UTF-8">
     <title>lab1</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="/js/script.js"></script>
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -21,7 +22,6 @@ $_SESSION['result'] = array();
 <div class="container">
 
     <svg height="600" width="600">
-
         <polygon class="rectangle-graph" fill=#95a3b3
                  points="300,300 300,200 100,200 100,300"></polygon>
 
@@ -68,11 +68,14 @@ $_SESSION['result'] = array();
         <circle cx="150" cy="150" fill=#84dcc6 id="target-dot" r="0"></circle>
     </svg>
 
-    <form class="getValue" id="form" action="check.php" target="result_table">
+
+    <form class="getValue" name="form" action="check.php"
+          onsubmit="return inputValidation(document.getElementById('valueY'), -5, 5)" target="result_table"
+          method="post">
 
         <div class="form_block">
-            <label for="valX">X = </label>
-            <select id="valX" name="valueX">
+            <label for="valueX">X = </label>
+            <select id="valueX" name="X">
                 <option value="-4">-4</option>
                 <option value="-3">-3</option>
                 <option value="-2">-2</option>
@@ -86,36 +89,36 @@ $_SESSION['result'] = array();
         </div>
 
         <div class="form_block">
-            <label for="valY">Y = </label>
-            <input type="number" id="valY" name="valueY" min="-5" max="5" required/>
+            <label for="valueY">Y = </label>
+            <input type="number" id="valueY" name="Y" required/>
         </div>
 
         <div class="form_block">
             <label for="form_radio_group">R = </label>
-            <div id="valR">
+            <div id="valueR">
 
                 <div class="form_radio_btn">
-                    <input id="radio-1" type="radio" name="valueR" value="1" checked>
+                    <input id="radio-1" type="radio" name="R" value="1" checked>
                     <label for="radio-1">1</label>
                 </div>
 
                 <div class="form_radio_btn">
-                    <input id="radio-2" type="radio" name="valueR" value="2" checked>
+                    <input id="radio-2" type="radio" name="R" value="2" checked>
                     <label for="radio-2">2</label>
                 </div>
 
                 <div class="form_radio_btn">
-                    <input id="radio-3" type="radio" name="valueR" value="3" checked>
+                    <input id="radio-3" type="radio" name="R" value="3" checked>
                     <label for="radio-3">3</label>
                 </div>
 
                 <div class="form_radio_btn">
-                    <input id="radio-4" type="radio" name="valueR" value="4" checked>
+                    <input id="radio-4" type="radio" name="R" value="4" checked>
                     <label for="radio-4">4</label>
                 </div>
 
                 <div class="form_radio_btn">
-                    <input id="radio-5" type="radio" name="valueR" value="5" checked>
+                    <input id="radio-5" type="radio" name="R" value="5" checked>
                     <label for="radio-5">5</label>
                 </div>
 
@@ -123,7 +126,7 @@ $_SESSION['result'] = array();
         </div>
 
         <div class="form_block">
-            <button name="check" type="submit" onclick="targetDot()">CHECK</button>
+            <button name="check" type="submit">CHECK</button>
         </div>
 
     </form>
@@ -144,7 +147,6 @@ $_SESSION['result'] = array();
         </svg>
     </a>
 </footer>
-
 
 </body>
 

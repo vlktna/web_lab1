@@ -4,9 +4,6 @@
 $startTime = microtime(true);
 $currentTime = date("H:i:s", strtotime('+3 hour'));
 
-$X = $_GET["valueX"];
-$Y = $_GET["valueY"];
-$R = $_GET["valueR"];
 
 echo "<!DOCTYPE HTML> 
 <html> 
@@ -27,24 +24,32 @@ echo "<!DOCTYPE HTML>
     </tr>";
 
 
-if ($X >= 0 && $Y >= 0 && $Y <= $R / 2 - $X) {
-    $scriptTime = microtime(true) - $startTime;
-    $result = "TRUE";
 
-} elseif ($X <= 0 && $Y >= 0 && ($R / 2 >= $Y) && (-$R <= $X)) {
-    $scriptTime = microtime(true) - $startTime;
-    $result = "TRUE";
-} elseif ($X >= 0 && $Y <= 0 && $X ^ 2 + $Y < ($R ^ 2) / 4) {
-    $scriptTime = microtime(true) - $startTime;
-    $result = "TRUE";
-} else {
-    $scriptTime = microtime(true) - $startTime;
-    $result = "FALSE";
+
+function check($X, $Y, $R, $startTime, $currentTime){
+    if ($X >= 0 && $Y >= 0 && $Y <= $R / 2 - $X) {
+        $scriptTime = microtime(true) - $startTime;
+        $result = "TRUE";
+
+    } elseif ($X <= 0 && $Y >= 0 && ($R / 2 >= $Y) && (-$R <= $X)) {
+        $scriptTime = microtime(true) - $startTime;
+        $result = "TRUE";
+    } elseif ($X >= 0 && $Y <= 0 && $X ^ 2 + $Y < ($R ^ 2) / 4) {
+        $scriptTime = microtime(true) - $startTime;
+        $result = "TRUE";
+    } else {
+        $scriptTime = microtime(true) - $startTime;
+        $result = "FALSE";
+    }
+
+
+    array_push($_SESSION['result'], "<tr> <td>$X</td> <td>$Y</td> <td>$R</td> <td>$result</td> 
+<td>$currentTime</td> <td>$scriptTime</td>");
+
 }
 
 
-array_push($_SESSION['result'], "<tr> <td>$X</td> <td>$Y</td> <td>$R</td> <td>$result</td> 
-<td>$currentTime</td> <td>$scriptTime</td>");
+check($_POST["X"], $_POST["Y"], $_POST["R"], $startTime, $currentTime);
 
 foreach ($_SESSION['result'] as $line) {
     echo $line;
