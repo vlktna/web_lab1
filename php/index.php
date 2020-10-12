@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
-session_start();
-$_SESSION['result'] = array();
+$_SESSION["result"] = array();
 ?>
 
 <html lang="ru">
@@ -9,7 +8,9 @@ $_SESSION['result'] = array();
     <meta charset="UTF-8">
     <title>lab1</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="../js/clearTable.js"></script>
 
 </head>
 
@@ -20,7 +21,6 @@ $_SESSION['result'] = array();
 </div>
 
 <div class="container">
-
     <svg height="600" width="600">
         <polygon class="rectangle-graph" fill=#95a3b3
                  points="300,300 300,200 100,200 100,300"></polygon>
@@ -69,11 +69,11 @@ $_SESSION['result'] = array();
     </svg>
 
 
-    <form class="getValue" name="form" action="check.php"
-          onsubmit="return inputValidation(document.getElementById('valueY'), -5, 5)" target="result_table"
-          method="post">
+    <form class="getValue" name="form" action="createTable.php"
+          onsubmit="return inputValidation(document.getElementById('valueY'), -5, 5)"
+          target="result_table" method="post">
 
-        <div class="form_block">
+        <div class="form__element">
             <label for="valueX">X = </label>
             <select id="valueX" name="X">
                 <option value="-4">-4</option>
@@ -88,12 +88,12 @@ $_SESSION['result'] = array();
             </select>
         </div>
 
-        <div class="form_block">
+        <div class="form__element">
             <label for="valueY">Y = </label>
-            <input type="number" id="valueY" name="Y" required/>
+            <input id="valueY" name="Y" required/>
         </div>
 
-        <div class="form_block">
+        <div class="form__element">
             <label for="form_radio_group">R = </label>
             <div id="valueR">
 
@@ -125,16 +125,25 @@ $_SESSION['result'] = array();
             </div>
         </div>
 
-        <div class="form_block">
+
+        <div class="form__element">
+            <button name="clear" id="clear-table" type="button" onclick="clearTable()">
+            <label for="clear-table">CLEAR TABLE</label>
+
+            <button name="clear" id="clear-form" type="button" onclick="clearForm()">
+            <label for="clear-form">CLEAR FORM</label>
+
+        </div>
+
+        <div class="form__element">
             <button name="check" type="submit">CHECK</button>
         </div>
 
     </form>
 
 </div>
-
 <div class="container-table">
-    <iframe name="result_table" id="result_table">
+    <iframe name="result_table" id="result_table" scrolling="no" onload="tableSize(this)" src = createTable.php>
     </iframe>
 </div>
 

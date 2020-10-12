@@ -1,29 +1,29 @@
-body{
+body {
     font-family: "Trebuchet MS", serif;
     margin: 0;
     padding: 0;
 }
 
-.header{
+.header {
     color: #ffffff;
     background-color: #4b4e6d;
     padding: 20px;
     font-size: 140%;
 }
 
-.container{
+.container {
     display: flex;
 }
 
-.container-table{
+.container-table {
     text-align: center;
 }
 
-.stud_name{
+.stud_name {
     float: right;
 }
 
-.getValue{
+.getValue {
     font-size: 150%;
     margin: auto;
     border-radius: 5px;
@@ -31,27 +31,39 @@ body{
     padding: 12px 20px;
 }
 
-input{
+input {
     font-size: 100%;
     font-family: "Trebuchet MS", serif;
     user-select: none;
 }
 
-input[type=number]{
+#valueY {
     border: none;
     border-bottom: 2px solid #84dcc6;
     background-color: #f2f2f2;
     margin-left: 10px;
 }
 
-button{
+button:hover {
+    color: #95a3b3;
+}
+
+button {
     font-size: 100%;
     font-family: "Trebuchet MS", serif;
     line-height: 34px;
-    background-color: #84dcc6;
     border-radius: 10px;
-    border: 1px solid #95a3b3;
+    cursor: pointer;
+}
 
+button[name=check] {
+    background-color: #84dcc6;
+    border: 0;
+}
+
+button[name=clear] {
+    border: 2px solid #84dcc6;
+    margin-right: 15px;
 }
 
 .form_radio_btn {
@@ -84,12 +96,12 @@ button{
 
 }
 
-.form_block{
+.form__element {
     display: flex;
     padding: 10px 10px;
 }
 
-select{
+select {
     margin-left: 10px;
     padding: 0 10px;
     line-height: 34px;
@@ -105,35 +117,35 @@ select:hover {
     color: #95a3b3;
 }
 
-table{
+table {
     margin: auto;
     font-size: 140%;
 }
 
-th{
+th {
     background-color: #4b4e6d;
     color: #ffffff;
     padding: 5px 70px;
 }
 
-td{
+td {
     font-size: 80%;
     text-align: center;
     background-color: #f2f2f2;
     padding: 5px;
 }
 
-iframe{
+iframe {
     border: none;
     width: 1200px;
     padding-bottom: 10px;
+    height: 150px;
 }
 
-footer{
+footer {
     background-color: #4b4e6d;
     padding: 5px;
     text-align: center;
-
 }
 
 
